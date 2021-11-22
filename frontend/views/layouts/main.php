@@ -38,7 +38,8 @@ AppAsset::register($this);
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
-            ['label' => 'จองห้องประชุม', 'url' => ['']], 
+            ['label' => 'จองห้องประชุม', 'url' => Yii::$app->urlManagerBackend->createAbsoluteUrl(['site/index'])], 
+            
         ], 
     ]);
     NavBar::end();

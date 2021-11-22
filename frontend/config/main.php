@@ -36,6 +36,19 @@ return [
         'session' => [
             'name' => 'APPFRONTEND',
         ],
+        'urlManager' => [
+            'class' => 'yii\web\urlManager',
+            'enablePrettyUrl' => false,
+            'showScriptName' => true,
+        ],
+        'urlManagerBackend' => [
+                'class' => 'yii\web\urlManager',
+                'baseUrl' => '/smartmeeting/backend/web',
+                'scriptUrl'=>'/smartmeeting/backend/web/index.php',
+                'enablePrettyUrl' => false,
+                'showScriptName' => true,
+        ],
+
     ],
     'params' => $params,
 ];

@@ -46,7 +46,9 @@ use yii\helpers\Html;
             [
                 'options' => ['class' => 'sidebar-menu'],
                 'items' => [
-                    ['label' => 'เมนู', 'options' => ['class' => 'header']],
+                    ['label' => 'หน้าบ้าน', 'options' => ['class' => 'header']],
+                    ['label' => 'ปฎิทินการจอง', 'icon' => 'fa fa-calendar', 'url'=> Yii::$app->urlManagerFrontend->createAbsoluteUrl(['site/index'])],
+                    ['label' => 'หลังบ้าน', 'options' => ['class' => 'header']],
                     ['label' => 'หน้าหลัก', 'icon' => 'fa fa-file-code-o', 'url' => ['/site/index']],
                     //['label' => 'Gii', 'icon' => 'fa fa-file-code-o', 'url' => ['/gii']],
                     //['label' => 'Debug', 'icon' => 'fa fa-dashboard', 'url' => ['/debug']],

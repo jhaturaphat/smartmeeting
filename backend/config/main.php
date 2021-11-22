@@ -47,6 +47,18 @@ return [
                 ],
             ],
         ],
+        'urlManager' => [
+            'class' => 'yii\web\urlManager',
+            'enablePrettyUrl' => false,
+            'showScriptName' => true,
+        ],
+        'urlManagerFrontend' => [
+                'class' => 'yii\web\urlManager',
+                'baseUrl' => '/smartmeeting/frontend/web',
+                'scriptUrl'=>'/smartmeeting/frontend/web/index.php',
+                'enablePrettyUrl' => false,
+                'showScriptName' => true,
+        ],
     ],
     'params' => $params,
 ];

@@ -89,3 +89,12 @@ a.desc:after {
     padding: 10px 20px;
     margin: 0 0 15px 0;
 }
+
+
+/* Overide CSS Admin LTE */
+.skin-blue .sidebar-menu>li.header{
+    color: #f1f5f7 !important;
+}
+.sidebar-menu li.header {
+    font-size: 20px !important;
+}
